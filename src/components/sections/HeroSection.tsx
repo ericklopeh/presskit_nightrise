@@ -24,7 +24,7 @@ export function HeroSection({
   return (
     <section
       id="inicio"
-      className="relative isolate flex min-h-[100svh] flex-col overflow-x-hidden pt-[5.25rem] sm:pt-24"
+      className="relative isolate flex min-h-[100svh] flex-col overflow-x-hidden pt-20 sm:pt-[5.25rem]"
     >
       <div className="absolute inset-0 -z-20 bg-metal-void" />
       <div
@@ -53,16 +53,12 @@ export function HeroSection({
         aria-hidden
       />
 
-      <div className="relative z-10 mt-auto w-full pb-20 sm:pb-28">
-        <div
-          className="pointer-events-none h-[min(32svh,13.5rem)] shrink-0 sm:h-[min(38svh,18rem)] md:h-[min(42svh,20.5rem)]"
-          aria-hidden
-        />
+      <div className="relative z-10 flex w-full flex-1 flex-col justify-center pb-16 sm:pb-24 md:pb-28">
         <Container className="relative">
         <h1 className="sr-only">{band.name}</h1>
         <Reveal>
-          <div className="flex w-full justify-center px-2 pb-6 pt-0 sm:px-4 sm:pb-8 md:pb-10">
-            <figure className="mx-auto w-full max-w-3xl translate-y-5 sm:max-w-4xl sm:translate-y-7 md:max-w-5xl md:translate-y-9">
+          <div className="flex w-full justify-center px-2 pb-5 pt-2 sm:px-4 sm:pb-6 sm:pt-4 md:pb-8">
+            <figure className="mx-auto w-full max-w-3xl sm:max-w-4xl md:max-w-5xl">
               <Image
                 src={band.logoSrc}
                 alt=""
