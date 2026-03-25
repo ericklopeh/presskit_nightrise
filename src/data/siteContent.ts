@@ -104,9 +104,9 @@ export const siteContent = {
   ],
 
   hero: {
-    /** Imagen de fondo del hero — foto grupal detrás del logo */
+    /** Imagen opcional detrás del logo — desactivada (mejor en móvil con degradado) */
     backgroundImage: "/images/grupal.jpg",
-    useBackgroundImage: true,
+    useBackgroundImage: false,
   },
 
   music: {
