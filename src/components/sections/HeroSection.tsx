@@ -24,13 +24,8 @@ export function HeroSection({
   return (
     <section
       id="inicio"
-      className="relative isolate flex min-h-[100svh] flex-col overflow-x-hidden pt-20 sm:pt-[5.25rem]"
+      className="relative isolate flex min-h-[100svh] flex-col overflow-x-hidden bg-black pt-20 sm:pt-[5.25rem]"
     >
-      <div className="absolute inset-0 -z-20 bg-metal-void" />
-      <div
-        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_30%_20%,rgba(122,21,24,0.22),transparent_55%),radial-gradient(ellipse_at_80%_60%,rgba(196,198,206,0.08),transparent_50%),linear-gradient(180deg,rgba(7,7,8,0.2),rgba(7,7,8,0.96))]"
-        aria-hidden
-      />
       {useBg ? (
         <div className="absolute inset-0 -z-10">
           <Image
@@ -41,17 +36,8 @@ export function HeroSection({
             className="object-cover object-[center_6%] sm:object-[center_4%]"
             sizes="100vw"
           />
-          <div
-            className="absolute inset-0 bg-gradient-to-b from-metal-black/62 via-metal-black/38 to-metal-black/90"
-            aria-hidden
-          />
         </div>
       ) : null}
-
-      <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 -z-5 h-40 bg-gradient-to-t from-metal-black to-transparent"
-        aria-hidden
-      />
 
       <div className="relative z-10 flex w-full flex-1 flex-col justify-center pb-16 sm:pb-24 md:pb-28">
         <Container className="relative">

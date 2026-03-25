@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --color-metal-black: #070708;
-  --color-metal-void: #0c0d10;
+  --color-metal-black: #000000;
+  --color-metal-void: #000000;
   --color-metal-steel: #1a1b22;
   --color-metal-silver: #c4c6ce;
   --color-metal-chrome: #e8eaef;
@@ -29,8 +29,7 @@ html {
 }
 
 body {
-  @apply bg-metal-black text-metal-silver antialiased;
-  background-image: theme(backgroundImage.noise-soft);
+  @apply bg-black text-metal-silver antialiased;
 }
 
 ::selection {

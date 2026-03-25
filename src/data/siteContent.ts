@@ -78,8 +78,8 @@ export const siteContent = {
   },
 
   theme: {
-    metalBlack: "#070708",
-    metalVoid: "#0c0d10",
+    metalBlack: "#000000",
+    metalVoid: "#000000",
     metalSteel: "#1a1b22",
     metalSilver: "#c4c6ce",
     metalChrome: "#e8eaef",
