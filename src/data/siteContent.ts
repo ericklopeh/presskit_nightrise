@@ -236,17 +236,17 @@ export const siteContent = {
   contact: {
     booking: {
       label: "Booking",
-      email: "reyes@dve.com.mx",
+      email: "reyes.amaro@theplaguebeonyouinc.com",
     },
     press: {
       label: "Prensa",
-      email: "reyes@dve.com.mx",
+      email: "reyes.amaro@theplaguebeonyouinc.com",
     },
     whatsapp: {
       label: "WhatsApp",
       /** Número en formato internacional sin + */
-      number: "528114202429",
-      display: "81 1420 2429",
+      number: "528110592161",
+      display: "81 1059 2161",
     },
   },
 
