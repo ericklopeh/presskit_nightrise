@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1067" viewBox="0 0 800 1067">
+  <rect width="800" height="1067" fill="#0c0d10"/>
+  <rect x="0" y="420" width="800" height="4" fill="#c4c6ce" opacity="0.08"/>
+  <text x="400" y="500" fill="#e8eaef" opacity="0.25" font-family="Georgia,serif" font-size="36" text-anchor="middle">MTY</text>
+  <text x="400" y="565" fill="#8b8d98" font-family="system-ui,sans-serif" font-size="14" text-anchor="middle">Press 03  reemplaza con tu foto</text>
+</svg>

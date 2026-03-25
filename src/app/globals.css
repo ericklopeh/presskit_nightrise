@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-metal-black: #070708;
+  --color-metal-void: #0c0d10;
+  --color-metal-steel: #1a1b22;
+  --color-metal-silver: #c4c6ce;
+  --color-metal-chrome: #e8eaef;
+  --color-metal-blood: #7a1518;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  @apply bg-metal-black text-metal-silver antialiased;
+  background-image: theme(backgroundImage.noise-soft);
+}
+
+::selection {
+  background: rgba(196, 198, 206, 0.25);
+  color: theme(colors.metal.chrome);
+}
+
+.music-spotlight {
+  animation: musicPulse 2.2s ease-out 1;
+}
+
+@keyframes musicPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(196, 198, 206, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(196, 198, 206, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(196, 198, 206, 0);
+  }
+}
+
+/* Scrollbar metálico sutil */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(196, 198, 206, 0.35) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(196, 198, 206, 0.28);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(196, 198, 206, 0.45);
+}
