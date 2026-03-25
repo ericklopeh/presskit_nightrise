@@ -54,7 +54,10 @@ export function MembersSection() {
                     </div>
                   )}
                 </div>
-                <div className="flex flex-1 flex-col items-center justify-center bg-metal-black/25 p-4 sm:p-5">
+                <div className="flex flex-1 flex-col items-center justify-center gap-1.5 bg-metal-black/25 p-4 sm:gap-2 sm:p-5">
+                  <p className="text-center font-display text-sm font-semibold text-metal-chrome sm:text-base">
+                    {m.name}
+                  </p>
                   <p className="text-center text-xs font-semibold uppercase tracking-[0.22em] text-metal-blood sm:text-sm">
                     {m.instrument}
                   </p>
